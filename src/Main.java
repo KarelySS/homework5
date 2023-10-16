@@ -6,8 +6,7 @@ public class Main {
         int clientOS = 1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        if (clientOS == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         //Задача 2
@@ -26,11 +25,11 @@ public class Main {
         //Задача 3
         System.out.println("Задача 3");
         int year = 2021;
-        if (year >= 1584) {
-        }
-        if (year % 4 == 0 && year % 400 == 0) {
+        if (year % 4 == 0 && year % 400 == 0 && year >= 1584) {
             System.out.println("Год високосный");
         } else if (year % 4 != 0 || year % 100 == 0) {
+            System.out.println("Год не високосный");
+        } else {
             System.out.println("Год не високосный");
         }
         //Задача 4
